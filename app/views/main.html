@@ -1,0 +1,13 @@
+<div class="col-xs-3 mainDiv" ng-controller="MainController">
+
+    <squares-directive></squares-directive>
+
+    <div class="col-xs-12">
+        This is the result: {{resultMessage}}
+    </div>
+
+    <div ng-if="isOver || isCatsGame">
+        <button ng-click="restart()">Restart</button>
+    </div>
+
+</div>
