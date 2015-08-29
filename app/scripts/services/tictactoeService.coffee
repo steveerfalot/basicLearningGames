@@ -49,7 +49,6 @@ angular.module 'tictactoeApp'
 
       catsGameCounter = 0
       for key, square of this.squares
-        console.log 'square in for loop: ', square
         if square != '' then catsGameCounter++
         if catsGameCounter == 9 then this.catsGame = true
 
