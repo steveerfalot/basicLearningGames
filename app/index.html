@@ -22,8 +22,15 @@
 
     <!-- Add your site or application content here -->
     <div>Need top margin!</div>
-    <div class="container">
-    <div ng-view=""></div>
+    <div class="container" ng-controller="NavigationController">
+      <ul class="nav nav-pills pull-right">
+        <li ng-click="navigation.goTo(pill.name)" ng-repeat="pill in navigation.headerPills">
+          <button id="{{pill.name}}Button" class="btn btn-sm">
+            {{pill.name}}
+          </button>
+        </li>
+      </ul>
+      <div ui-view=""></div>
     </div>
 
     <!-- build:js(.) scripts/vendor.js -->
@@ -39,12 +46,15 @@
     <script src="bower_components/angular-touch/angular-touch.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
-        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/controllers/navigation.js"></script>
+        <script src="scripts/controllers/addition.js"></script>
         <!-- endbuild -->
+    <script src="scripts/routes/routes.js"></script>
     <script src="scripts/directives/squaresDirective.js"></script>
     <script src="scripts/directives/squareDirective.js"></script>
     <script src="scripts/services/tictactoeService.js"></script>

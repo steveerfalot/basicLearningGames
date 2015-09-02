@@ -9,3 +9,17 @@ body {
   text-align: center;
   line-height: 50px;
 }
+
+.problem {
+  font-size: 2em;
+  text-align: center;
+}
+
+.problem input {
+  width: 3em;
+}
+
+.answer-div {
+  border-top: 1px solid dimgrey;
+  padding-top: 5px;
+}

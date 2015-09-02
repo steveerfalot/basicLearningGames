@@ -27,11 +27,11 @@ module.exports = (config) ->
       'bower_components/angular-sanitize/angular-sanitize.js'
       'bower_components/angular-touch/angular-touch.js'
       'bower_components/angular-mocks/angular-mocks.js'
+      'bower_components/angular-ui-router/release/angular-ui-router.js'
       # endbower
       # bower:coffee
       # endbower
       "app/scripts/**/*.coffee"
-      "test/mock/**/*.coffee"
       "test/spec/**/*.coffee"
     ],
 

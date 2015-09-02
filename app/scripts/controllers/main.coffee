@@ -1,12 +1,5 @@
 'use strict'
 
-###*
- # @ngdoc function
- # @name tictactoeApp.controller:MainCtrl
- # @description
- # # MainCtrl
- # Controller of the tictactoeApp
-###
 angular.module 'tictactoeApp'
   .controller 'MainController', ($scope) ->
     $scope.resultMessage = 'No wins yet'
