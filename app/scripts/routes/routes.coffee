@@ -10,7 +10,7 @@ angular
     url: '/'
     controller: 'MainController'
     templateUrl: 'views/main.html'
-  .state 'addition',
-    url: '/addition'
-    controller: 'AdditionController'
-    templateUrl: 'views/addition.html'
+  .state 'math',
+    url: '/math'
+    controller: 'MathController'
+    templateUrl: 'views/math.html'

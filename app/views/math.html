@@ -1,13 +1,10 @@
 <div class="col-xs-2 mainDiv">
-  <div class="difficulty-selector">
-    <input ng-model="difficulty" type="text" /> <button ng-click="setDifficulty(difficulty)" class="btn btn-sm">Set Difficulty</button>
-  </div>
   <div class="problem">
     <div class="col-xs-offset-1 col-xs-11">
       {{firstNumber}}
     </div>
     <div class="col-xs-1">
-      +
+      {{operatorLabel}}
     </div>
     <div class="col-xs-11">
       {{secondNumber}}
@@ -24,5 +21,19 @@
   </div>
   <div class="reset">
     <button ng-click="setNumbers()" class="btn btn-sm">Reset</button>
+  </div>
+</div>
+<div class="col-xs-offset-1 col-xs-4">
+  <div class="col-xs-12">
+    <label for="operator">Operator:</label>
+    <select id="operator" ng-model="operator"
+            ng-init="operator = operators[0]"
+            ng-options="option.option for option in operators">
+    </select>
+  </div>
+  <div class="col-xs-12">
+    <div class="difficulty-selector">
+      <input ng-model="difficulty" type="text" /> <button ng-click="setDifficulty(difficulty)" class="btn btn-sm">Set Difficulty</button>
+    </div>
   </div>
 </div>
