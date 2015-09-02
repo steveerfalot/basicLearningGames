@@ -6,7 +6,7 @@ angular
   $urlRouterProvider.otherwise '/'
 
   $stateProvider
-  .state 'home',
+  .state 'tictactoe',
     url: '/'
     controller: 'MainController'
     templateUrl: 'views/main.html'

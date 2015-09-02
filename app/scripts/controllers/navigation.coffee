@@ -4,7 +4,7 @@ angular.module 'tictactoeApp'
 .controller 'NavigationController', ($scope, $state) ->
   $scope.navigation =
     headerPills: [
-      {name: 'home'},
+      {name: 'tictactoe'},
       {name: 'addition'},
     ],
     goTo: (type) ->

@@ -23,28 +23,20 @@ angular.module 'tictactoeApp'
 
     isWon: (playerValue) ->
       if (this.squares['1'] == playerValue && this.squares['2'] == playerValue && this.squares['3'] == playerValue)
-        console.log 'won 1'
         return true
       if (this.squares['1'] == playerValue && this.squares['5'] == playerValue && this.squares['9'] == playerValue)
-        console.log 'won 2'
         return true
       if (this.squares['1'] == playerValue && this.squares['4'] == playerValue && this.squares['7'] == playerValue)
-        console.log 'won 3'
         return true
       if (this.squares['2'] == playerValue && this.squares['5'] == playerValue && this.squares['8'] == playerValue)
-        console.log 'won 4'
         return true
       if (this.squares['3'] == playerValue && this.squares['6'] == playerValue && this.squares['9'] == playerValue)
-        console.log 'won 5'
         return true
       if (this.squares['3'] == playerValue && this.squares['5'] == playerValue && this.squares['7'] == playerValue)
-        console.log 'won 6'
         return true
       if (this.squares['4'] == playerValue && this.squares['5'] == playerValue && this.squares['6'] == playerValue)
-        console.log 'won 7'
         return true
       if (this.squares['7'] == playerValue && this.squares['8'] == playerValue && this.squares['9'] == playerValue)
-        console.log 'won 8'
         return true
 
       catsGameCounter = 0
@@ -69,7 +61,5 @@ angular.module 'tictactoeApp'
         7: ''
         8: ''
         9: ''
-
-      console.log 'this.squares: ', this.squares
 
   }

@@ -4,10 +4,42 @@ body {
 
 .square {
   height: 50px;
-  border: 1px solid red;
   font-size: 50px;
   text-align: center;
   line-height: 50px;
+}
+
+#topLeft {
+  border-bottom: 1px solid black;
+}
+
+#topMiddle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#topRight {
+  border-bottom: 1px solid black;
+}
+
+#midLeft {
+  border-bottom: 1px solid black;
+}
+
+#midMiddle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#midRight {
+  border-bottom: 1px solid black;
+}
+
+#bottomMiddle {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
 .problem {

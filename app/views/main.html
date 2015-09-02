@@ -1,4 +1,4 @@
-<div class="col-xs-3 mainDiv">
+<div class="col-xs-offset-1 col-xs-3 mainDiv">
 
     <squares-directive></squares-directive>
 
@@ -7,7 +7,7 @@
     </div>
 
     <div ng-if="isOver || isCatsGame">
-        <button ng-click="restart()">Restart</button>
+        <button ng-click="restart()" class="btn btn-sm">Restart</button>
     </div>
 
 </div>
